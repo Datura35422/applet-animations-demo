@@ -1,0 +1,12 @@
+<view class="gift-list">
+  <block wx:for="{{currentQueue}}" wx:key="{{item.random}}">
+    <view class="gift-message {{item.show}}">
+      <view class="gift-bg"></view>
+      <view class="send-wrapper">
+        <view class="send-user">{{item.sendName + '　'}}</view>
+        <view class="send-gift">{{item.giftName + '　'}}</view>
+      </view>
+      <image wx:if="{{item.giftUrl}}" class="gift-img" src="{{item.giftUrl}}"></image>
+    </view>
+  </block>
+</view>

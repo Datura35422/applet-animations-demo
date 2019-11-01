@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+  <checkbox-group class="checkbox-group" bindchange="checkboxChange">
+    <checkbox class="checkbox" checked="{{improve}}">
+      <text>查看优化效果</text>
+    </checkbox>
+  </checkbox-group>
+  <button bind:tap="addGift">赠送礼物</button>
+  <button bind:tap="asyncSend">同时赠送{{num}}个礼物</button>
+</view>
+
+<gift-improve wx:if="{{improve}}" gift="{{gift}}"></gift-improve>
+<gift wx:else gift="{{gift}}"></gift>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "gift": "/components/gift/gift",
+    "gift-improve": "/components/giftImprove/gift"
+  }
+}
